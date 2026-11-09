@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="مركز القيادة اليومي — لوحة متابعة العمل والمهام والمواعيد">
+  <title>مركز القيادة اليومي | TAO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="الرئيسية"><span class="brand-mark">T</span><span><b>TAO</b><small>مركز القيادة</small></span></a>
+      <div class="side-label">مساحة العمل</div>
+      <nav id="main-nav">
+        <a class="nav-link active" href="#overview" data-target="overview"><span>▦</span> نظرة عامة</a>
+        <a class="nav-link" href="#inbox" data-target="inbox"><span>✉</span> البريد والمتابعات</a>
+        <a class="nav-link" href="#calendar" data-target="calendar"><span>▣</span> المواعيد</a>
+        <a class="nav-link" href="#projects" data-target="projects"><span>◫</span> المشاريع والمهام</a>
+        <a class="nav-link" href="#files" data-target="files"><span>▤</span> ملفات العمل</a>
+        <a class="nav-link" href="#life" data-target="life"><span>✦</span> الحياة والأنشطة</a>
+        <a class="nav-link" href="#investment" data-target="investment"><span>↗</span> أفكار الاستثمار</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <span class="status-dot"></span><span>نسخة تجريبية مستقلة</span>
+        <small>لا توجد مصادر شخصية متصلة</small>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div><span class="eyebrow">لوحة المتابعة اليومية</span><h1>صباح العمل، أهلاً بك</h1><p class="muted">رؤية واحدة لما يحتاج انتباهك اليوم.</p></div>
+        <div class="top-actions"><span class="date-chip" id="today-date">—</span><button class="icon-button" id="refresh-btn" title="تحديث العرض" aria-label="تحديث العرض">↻</button></div>
+      </header>
+
+      <div class="demo-banner"><b>وضع العرض التجريبي</b><span>المعلومات المعروضة أمثلة توضيحية وليست بيانات حقيقية أو متصلة بحساباتك.</span></div>
+
+      <section id="overview" class="section">
+        <div class="section-heading"><div><span class="eyebrow">ملخص سريع</span><h2>نظرة عامة</h2></div><span class="muted small">بيانات توضيحية</span></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span class="stat-icon blue">✉</span><span class="stat-label">رسائل تحتاج متابعة</span><strong>3</strong><small>مثال تجريبي</small></article>
+          <article class="stat-card"><span class="stat-icon violet">▣</span><span class="stat-label">مواعيد اليوم</span><strong>2</strong><small>مثال تجريبي</small></article>
+          <article class="stat-card"><span class="stat-icon amber">◫</span><span class="stat-label">مهام قيد التنفيذ</span><strong>5</strong><small>مثال تجريبي</small></article>
+          <article class="stat-card"><span class="stat-icon green">✓</span><span class="stat-label">مهام مكتملة</span><strong>4</strong><small>مثال تجريبي</small></article>
+        </div>
+      </section>
+
+      <section class="section two-column">
+        <article id="projects" class="panel">
+          <div class="panel-heading"><div><span class="eyebrow">الأولوية الآن</span><h2>المشاريع والمهام</h2></div><span class="tag tag-blue">عينة</span></div>
+          <div class="project-item"><div class="project-top"><b>مشروع تجهيز جناح معرض</b><span class="tag tag-amber">بانتظار اعتماد</span></div><p>مراجعة العرض الفني والمالي مع العميل.</p><div class="progress"><span style="width:70%"></span></div><small>تقدم افتراضي · 70%</small></div>
+          <div class="project-item"><div class="project-top"><b>خطة تشغيل فعالية</b><span class="tag tag-green">قيد التنفيذ</span></div><p>تحديث الجدول والمسؤوليات التشغيلية.</p><div class="progress"><span style="width:45%"></span></div><small>تقدم افتراضي · 45%</small></div>
+          <div class="project-item"><div class="project-top"><b>مراجعة الموردين</b><span class="tag tag-gray">مجدولة</span></div><p>تجميع عروض الأسعار ومقارنتها.</p><div class="progress"><span style="width:20%"></span></div><small>تقدم افتراضي · 20%</small></div>
+        </article>
+        <article id="calendar" class="panel">
+          <div class="panel-heading"><div><span class="eyebrow">التنظيم</span><h2>المواعيد القادمة</h2></div><span class="tag tag-blue">عينة</span></div>
+          <div class="timeline-item"><time>09:30</time><div><b>اجتماع متابعة مشروع</b><p>مراجعة المستجدات والقرارات</p></div></div>
+          <div class="timeline-item"><time>13:00</time><div><b>مكالمة مع مورد</b><p>تأكيد نطاق التوريد والمدة</p></div></div>
+          <div class="note-box">هذه المواعيد افتراضية. لن تظهر مواعيد التقويم الفعلية إلا بعد إعداد تكامل آمن ومصرّح به.</div>
+        </article>
+      </section>
+
+      <section id="inbox" class="section two-column">
+        <article class="panel">
+          <div class="panel-heading"><div><span class="eyebrow">التواصل</span><h2>البريد والمتابعات</h2></div><span class="tag tag-amber">3 أمثلة</span></div>
+          <div class="list-row"><span class="avatar">ع</span><div class="list-main"><b>طلب مراجعة عرض سعر</b><small>مثال توضيحي · يحتاج ردًا</small></div><span class="tag tag-amber">مطلوب</span></div>
+          <div class="list-row"><span class="avatar">م</span><div class="list-main"><b>تأكيد موعد اجتماع</b><small>مثال توضيحي · متابعة</small></div><span class="tag tag-blue">متابعة</span></div>
+          <div class="list-row"><span class="avatar">ف</span><div class="list-main"><b>إرسال مستندات المورد</b><small>مثال توضيحي · بانتظار رد</small></div><span class="tag tag-gray">انتظار</span></div>
+          <p class="footnote">لا يوجد اتصال حالي بالبريد أو واتساب.</p>
+        </article>
+        <article id="files" class="panel">
+          <div class="panel-heading"><div><span class="eyebrow">المستندات</span><h2>ملفات العمل</h2></div><span class="tag tag-blue">عينة</span></div>
+          <div class="file-row"><span class="file-type pdf">PDF</span><div><b>عرض فني - نموذج</b><small>ملف توضيحي · 08 نوفمبر</small></div></div>
+          <div class="file-row"><span class="file-type xls">XLS</span><div><b>جدول متابعة التكاليف</b><small>ملف توضيحي · 07 نوفمبر</small></div></div>
+          <div class="file-row"><span class="file-type doc">DOC</span><div><b>محضر اجتماع - نموذج</b><small>ملف توضيحي · 06 نوفمبر</small></div></div>
+          <p class="footnote">هذه ليست ملفات من مكتبتك؛ الربط بالملفات سيُضاف لاحقًا حسب المصدر المتاح.</p>
+        </article>
+      </section>
+
+      <section id="life" class="section two-column">
+        <article class="panel">
+          <div class="panel-heading"><div><span class="eyebrow">خارج العمل</span><h2>أنشطة وأفكار للرياض</h2></div><span class="tag tag-gray">قسم مبدئي</span></div>
+          <p class="muted">سيعرض هذا القسم اقتراحات محدثة للأفلام والأنشطة العائلية والفعاليات في الرياض بعد تفعيل البحث عن الخيارات الحالية.</p>
+          <div class="placeholder-card"><b>اقتراحات نهاية الأسبوع</b><small>سيتم جلب الخيارات ومواعيدها وروابط الحجز عند الطلب.</small></div>
+        </article>
+        <article id="investment" class="panel">
+          <div class="panel-heading"><div><span class="eyebrow">رأس المال</span><h2>أفكار استثمار قصيرة الأجل</h2></div><span class="tag tag-gray">للبحث لاحقًا</span></div>
+          <p class="muted">سيُبنى هذا القسم على رأس مال ابتدائي افتراضي قدره 3,000 ريال، مع مقارنة السيولة والمخاطر والرسوم والمدة.</p>
+          <div class="note-box warning">لا توجد توصية استثمارية أو عوائد مضمونة في هذه النسخة. يجب التحقق من الأنظمة والمخاطر قبل أي قرار.</div>
+        </article>
+      </section>
+
+      <footer><span>TAO · مركز القيادة اليومي</span><span>نسخة أولية ثابتة · لا تعرض بيانات حقيقية</span></footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
